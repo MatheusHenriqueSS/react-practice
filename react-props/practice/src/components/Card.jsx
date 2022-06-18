@@ -12,8 +12,8 @@ function Card(props) {
       />
     </div>
     <div className="bottom">
-      <p class="info">{props.tel}</p>
-      <p class="info">{props.mail}</p>
+      <p className="info">{props.tel}</p>
+      <p className="info">{props.mail}</p>
     </div>
   </div>
   );
