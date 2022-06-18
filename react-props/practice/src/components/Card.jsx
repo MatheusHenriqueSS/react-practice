@@ -1,19 +1,19 @@
 import React from "react";
 
-function Card() {
+function Card(props) {
    return (
    <div className="card">
     <div className="top">
-      <h2 className="name">Beyonce</h2>
+      <h2 className="name">{props.name}</h2>
       <img
         className="circle-img"
-        src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
+        src={props.img}
         alt="avatar_img"
       />
     </div>
     <div className="bottom">
-      <p class="info">+123 456 789</p>
-      <p class="info">b@beyonce.com</p>
+      <p class="info">{props.tel}</p>
+      <p class="info">{props.mail}</p>
     </div>
   </div>
   );
