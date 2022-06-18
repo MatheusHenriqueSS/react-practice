@@ -7,13 +7,13 @@ function Card(props) {
       <h2 className="name">{props.name}</h2>
       <img
         className="circle-img"
-        src={props.img}
-        alt="avatar_img"
+        src={props.imgURL}
+        alt="contact img"
       />
     </div>
     <div className="bottom">
-      <p className="info">{props.tel}</p>
-      <p className="info">{props.mail}</p>
+      <p className="info">{props.phone}</p>
+      <p className="info">{props.email}</p>
     </div>
   </div>
   );
